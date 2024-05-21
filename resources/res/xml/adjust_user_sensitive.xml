@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:title="@string/assistant_record_audio_user_sensitive_title" android:key="assistantrecordaudio" android:summary="@string/assistant_record_audio_user_sensitive_summary"/>
+    <SwitchPreference android:title="@string/adjust_user_sensitive_globally_title" android:key="global" android:summary="@string/adjust_user_sensitive_globally_summary"/>
+    <PreferenceCategory android:title="@string/adjust_user_sensitive_per_app_header" android:key="perapp"/>
+</PreferenceScreen>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="car_ui_keyline_1">32dp</dimen>
+    <dimen name="car_ui_keyline_2">108dp</dimen>
+    <dimen name="car_ui_keyline_3">128dp</dimen>
+    <dimen name="car_ui_keyline_4">168dp</dimen>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/scrollView" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:id="@+id/reasonIntro" android:paddingTop="18dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/incident_report_dialog_intro" android:paddingStart="?android:attr/dialogPreferredPadding" android:paddingEnd="?android:attr/dialogPreferredPadding" style="@android:style/TextAppearance.Material.Subhead"/>
+        <TextView android:textSize="18sp" android:id="@+id/reasons" android:paddingTop="18dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/incident_report_dialog_intro" android:paddingStart="@dimen/incident_reason_padding" android:paddingEnd="?android:attr/dialogPreferredPadding" style="@android:style/TextAppearance.Material.Subhead"/>
+        <HorizontalScrollView android:id="@+id/imageScrollView" android:paddingTop="18dp" android:visibility="gone" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/imageList" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="?android:attr/dialogPreferredPadding" android:paddingEnd="?android:attr/dialogPreferredPadding"/>
+        </HorizontalScrollView>
+        <TextView android:textSize="18sp" android:id="@+id/message" android:paddingTop="18dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="?android:attr/dialogPreferredPadding" android:paddingEnd="?android:attr/dialogPreferredPadding" style="@android:style/TextAppearance.Material.Subhead"/>
+    </LinearLayout>
+</ScrollView>

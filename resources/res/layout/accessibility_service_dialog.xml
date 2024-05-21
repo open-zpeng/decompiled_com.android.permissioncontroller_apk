@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/AccessibilityServiceDialogScrollView">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" style="@style/AccessibilityServiceDialog">
+        <LinearLayout style="@style/AccessibilityServiceDialogHeader">
+            <ImageView android:id="@+id/header_icon" style="@style/AccessibilityServiceDialogHeaderIcon"/>
+        </LinearLayout>
+        <TextView android:id="@+id/title" style="@style/AccessibilityServiceDialogTitle"/>
+        <LinearLayout android:id="@+id/items_container" style="@style/AccessibilityServiceDialogItemsContainer"/>
+        <TextView android:id="@+id/middle_text" android:visibility="gone" style="@style/AccessibilityServiceDialogMiddleText"/>
+        <TextView android:id="@+id/bottom_text" style="@style/AccessibilityServiceDialogBottomText"/>
+    </LinearLayout>
+</ScrollView>

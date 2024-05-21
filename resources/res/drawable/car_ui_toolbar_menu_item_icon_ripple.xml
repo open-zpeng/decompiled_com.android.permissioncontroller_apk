@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/car_ui_ripple_color" android:radius="@dimen/car_ui_toolbar_menu_item_icon_ripple_radius"/>

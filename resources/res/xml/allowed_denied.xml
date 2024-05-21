@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/allowed_header" android:key="allowed"/>
+    <PreferenceCategory android:title="@string/allowed_foreground_header" android:key="allowed_foreground"/>
+    <PreferenceCategory android:title="@string/denied_header" android:key="denied"/>
+</PreferenceScreen>

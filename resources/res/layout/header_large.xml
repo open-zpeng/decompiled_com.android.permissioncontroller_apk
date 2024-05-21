@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/large_header" style="@style/LargeHeader">
+    <include layout="@layout/settings_entity_header"/>
+    <TextView android:id="@+id/header_text" style="@style/LargeHeaderText"/>
+    <TextView android:id="@+id/header_link" android:clickable="true" style="@style/LargeHeaderLink"/>
+    <View style="@style/LargeHeaderDivider"/>
+</LinearLayout>

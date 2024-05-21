@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/RequestRoleView">
+    <ListView android:id="@+id/list" style="@style/RequestRoleViewListView"/>
+    <CheckBox android:id="@+id/dont_ask_again" android:text="@string/request_role_dont_ask_again" style="@style/RequestRoleViewCheckbox"/>
+</LinearLayout>

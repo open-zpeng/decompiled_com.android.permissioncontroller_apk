@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="@dimen/x_dialog_width" android:layout_height="wrap_content" android:minWidth="@dimen/x_dialog_width">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/x_dialog_title_layout" android:layout_width="@dimen/x_dialog_width" android:layout_height="@dimen/x_dialog_title_layout_height">
+        <com.xiaopeng.xui.widget.XImageButton android:id="@+id/x_dialog_close" android:visibility="invisible" android:layout_margin="@dimen/x_dialog_close_padding" style="@style/XButton.Icon.Large.Close"/>
+        <com.xiaopeng.xui.widget.XTextView android:id="@+id/x_dialog_title" android:layout_alignTop="@+id/x_dialog_close" android:layout_alignBottom="@+id/x_dialog_close" android:layout_marginStart="@dimen/x_dialog_content_margin_horizontal" android:layout_marginEnd="@dimen/x_dialog_content_margin_horizontal" style="@style/XDialogTitleStyle"/>
+    </RelativeLayout>
+    <com.xiaopeng.xui.widget.XScrollView android:layout_height="0dp" android:minHeight="100dp" android:fillViewport="true" android:layout_weight="1" android:layout_marginStart="20dp" android:layout_marginEnd="20dp" style="@style/XDialogContentScrollViewStyle">
+        <com.xiaopeng.xui.widget.XTextView android:textSize="@dimen/x_font_title_04_size" android:textColor="@color/x_theme_text_02" android:id="@+id/x_dialog_message" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/PermissionGrantTitleMessage"/>
+    </com.xiaopeng.xui.widget.XScrollView>
+    <com.xiaopeng.xui.widget.XCheckBox android:textSize="@dimen/x_font_body_01_size" android:textColor="@color/x_theme_text_01" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@+id/do_not_ask_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/never_ask_again"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/x_dialog_has_buttons" android:layout_width="match_parent" android:layout_height="@dimen/x_dialog_button_height">
+        <com.xiaopeng.xui.widget.XButton android:id="@+id/x_dialog_button1" android:text="@string/grant_dialog_button_allow" style="@style/XButton.Dialog.Positive"/>
+        <com.xiaopeng.xui.widget.XButton android:id="@+id/x_dialog_button2" android:text="@string/grant_dialog_button_deny" style="@style/XButton.Dialog.Negative"/>
+    </LinearLayout>
+</LinearLayout>

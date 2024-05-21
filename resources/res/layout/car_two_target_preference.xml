@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?android:attr/listPreferredItemHeightSmall">
+    <LinearLayout android:gravity="start|center_vertical" android:background="?android:attr/selectableItemBackground" android:paddingTop="@android:dimen/car_progress_bar_height" android:paddingBottom="@android:dimen/car_progress_bar_height" android:clipToPadding="false" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:paddingStart="?android:attr/listPreferredItemPaddingStart" android:paddingEnd="?android:attr/listPreferredItemPaddingEnd">
+        <androidx.preference.internal.PreferenceImageView android:id="@android:id/icon" android:layout_width="@android:dimen/car_primary_icon_size" android:layout_height="@android:dimen/car_primary_icon_size" android:layout_marginEnd="?android:attr/listPreferredItemPaddingEnd"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textAppearance="?android:attr/textAppearanceListItem" android:ellipsize="end" android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:hyphenationFrequency="none"/>
+            <TextView android:textAppearance="?android:attr/textAppearanceListItemSecondary" android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hyphenationFrequency="none"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/action_widget_container" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <View android:id="@+id/two_target_divider" android:background="?attr/carDividerColor" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginTop="@android:dimen/car_progress_bar_height" android:layout_marginBottom="@android:dimen/car_progress_bar_height"/>
+        <FrameLayout android:gravity="center" android:id="@android:id/widget_frame" android:background="?android:attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="?android:attr/listPreferredItemHeightSmall" android:paddingStart="?android:attr/listPreferredItemPaddingStart" android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"/>
+    </LinearLayout>
+</LinearLayout>

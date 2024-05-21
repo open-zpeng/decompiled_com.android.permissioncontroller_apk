@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/PermissionFilterDialogItemContainer">
+    <RadioButton android:id="@+id/radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout style="@style/PermissionFilterDialogItemTextFrame">
+        <TextView android:id="@+id/title" style="@style/PermissionFilterDialogItemTitle"/>
+        <TextView android:id="@+id/summary" style="@style/PermissionFilterDialogItemSummary"/>
+    </LinearLayout>
+</LinearLayout>

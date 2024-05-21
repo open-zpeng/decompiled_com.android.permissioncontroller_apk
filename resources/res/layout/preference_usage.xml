@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/PreferenceUsage">
+    <include android:id="@+id/image_frame_include" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" layout="@layout/image_frame" style="@style/PreferenceUsageImageFrame"/>
+    <LinearLayout android:id="@+id/title_widget_frame" app:layout_constraintBottom_toBottomOf="@android:id/title" app:layout_constraintStart_toEndOf="@+id/image_frame_include" style="@style/PreferenceUsageTitleWidgetFrame"/>
+    <TextView android:id="@android:id/title" app:layout_constraintBottom_toTopOf="@android:id/summary" app:layout_constraintStart_toEndOf="@+id/title_widget_frame" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_chainStyle="packed" style="@style/PreferenceUsageTitle"/>
+    <LinearLayout android:id="@+id/summary_widget_frame" app:layout_constraintBottom_toBottomOf="@android:id/summary" app:layout_constraintStart_toEndOf="@+id/image_frame_include" style="@style/PreferenceUsageSummaryWidgetFrame"/>
+    <TextView android:id="@android:id/summary" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toStartOf="@android:id/widget_frame" app:layout_constraintStart_toEndOf="@+id/summary_widget_frame" app:layout_constraintTop_toBottomOf="@android:id/title" app:layout_constraintVertical_chainStyle="packed" style="@style/PreferenceUsageSummary"/>
+    <LinearLayout android:id="@android:id/widget_frame" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" style="@style/PreferenceUsageWidgetFrame"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

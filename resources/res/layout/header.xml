@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/Header">
+    <ImageView android:id="@+id/icon" style="@style/HeaderIcon"/>
+    <TextView android:id="@+id/name" style="@style/HeaderName"/>
+    <ImageView android:id="@+id/info" android:src="@drawable/ic_info_outline_accent" android:contentDescription="@string/app_permissions_info_button_label" style="@style/HeaderInfo"/>
+</RelativeLayout>
